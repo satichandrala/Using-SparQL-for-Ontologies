@@ -1,0 +1,1289 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/satic/ontologies/2021/0/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/satic/ontologies/2021/0/untitled-ontology-17"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:aeo="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/satic/ontologies/2021/0/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#">
+        <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#hasSubSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#hasSubSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#hasSpecies"/>
+        <rdfs:label xml:lang="en">has sub species</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#partOf -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#requiredBy"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
+        <owl:equivalentClass rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:isDefinedBy xml:lang="en">Gives information about the location of the Plant</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Area -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Area">
+        <rdfs:comment xml:lang="de">Fläche</rdfs:comment>
+        <rdfs:label xml:lang="de">Gebiet</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant">
+        <rdfs:comment xml:lang="en">are the plants that exist in the field in Klein Altendorf Campus</rdfs:comment>
+        <rdfs:comment xml:lang="de">sind die Pflanzen, die im Feld auf dem Campus Klein Altendorf stehen</rdfs:comment>
+        <rdfs:label xml:lang="de">Pflanze</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species">
+        <owl:equivalentClass rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#subspecies"/>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Variety"/>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_activity -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_activity">
+        <owl:equivalentClass rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_input"/>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_entity"/>
+        <rdfs:comment xml:lang="en">Knowledge of the type of treatments applied or to be applied</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_input -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_input"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field">
+        <rdfs:comment xml:lang="de">gibt Details über die field_id der Anlage</rdfs:comment>
+        <rdfs:comment xml:lang="en">gives details about the field_id of the Plant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#subspecies -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#subspecies">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <rdfs:comment xml:lang="en">are the sub species of the plants that are in Klein Altendorf Campus</rdfs:comment>
+        <rdfs:label xml:lang="en">sub species</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Area"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gives the location of the treatments in fields</rdfs:comment>
+        <rdfs:label xml:lang="en">trfield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Alcedo -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Alcedo">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_1"/>
+        <rdfs:label xml:lang="de">Alcedo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Apfel -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Apfel">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#E3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#L1"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">is a nutritious fruit</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist ein nahrhaftes Obst</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/%C3%84pfel</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Apple</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Apfel</rdfs:label>
+        <rdfs:label xml:lang="en">Apple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Avalon -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Avalon">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe"/>
+        <rdfs:label xml:lang="de">Avalon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#B2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#B2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>B2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#BTS_440 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#BTS_440">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc"/>
+        <rdfs:comment xml:lang="en">is a sub species variety of Sugar beets</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist eine Unterart der Sorte Zuckerrüben</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://www.proplanta.de/Pflanzenbauberater/Sorten/BTS-440-Zuckerruebe-Nematoden-Sortiment_sks_2306ZR2.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">BTS 440</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Benchmark -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Benchmark">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc"/>
+        <rdfs:isDefinedBy xml:lang="de">https://ig-pflanzenzucht.de/sorte/benchmark/</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">is a type of plant breeding with high yields of wheat</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Benchmark</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Birne -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Birne">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H2"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">an edible fruit of Pyrinae fruit family</rdfs:comment>
+        <rdfs:comment xml:lang="de">eine essbare Frucht aus der Familie der Pyrinae-Früchte</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Birnen</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Pear</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Birne</rdfs:label>
+        <rdfs:label xml:lang="en">Pear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>C1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>C2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>D1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>D2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#DLR -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#DLR">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#O1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#P1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#R"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#S"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X2"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:isDefinedBy xml:lang="de">https://www.agrohort.uni-bonn.de/teilprojekte/agrohort-med</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">DLR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Dick2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick_2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Dick 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#E3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#E3">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>E2/E3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>A2/F1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>F2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>G1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>G2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#GHA_Pflanzen -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#GHA_Pflanzen">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_3"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Avalon"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:label xml:lang="de">GHA-Pflanzen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>H1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>H2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>I1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>I2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIIa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIIb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIIc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIId</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIIe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe_2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>IIIe_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>IIb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb_b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb_b1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIb b1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IId</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IIe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IOL -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IOL">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IOL"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">is the Location of the laboratory of test plant Wiesengut</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist der Standort des Labors der Prüfanlage Wiesengut</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://www.iol.uni-bonn.de/das-institut/labor</rdfs:isDefinedBy>
+        <rdfs:label>IOL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IV_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IV_b">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IV_b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVa -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVa">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>IVa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVb -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVb">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>IVb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IVc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>IVd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Ia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>Ia_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>Ia_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_3">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>Ia_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Ib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Ic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Id</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Iva_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Iva_2 Halle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle_teil -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle_teil">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Iva_2 Halle teil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>K1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>K2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K3">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>K3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Kamerad -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Kamerad">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd"/>
+        <rdfs:comment xml:lang="en">is a plant breeding variety for wheat</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist eine Zuchtsorte für Weizen</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://www.hauptsaaten.de/kamerad/#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Kamerad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Kirsche -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Kirsche">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D1"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">is a sweet fruit</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Kirsche</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Cherry</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Cherry</rdfs:label>
+        <rdfs:label xml:lang="de">Kirsche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#L1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#L1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>L1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lisanna -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lisanna">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib"/>
+        <rdfs:comment xml:lang="en">is a sub species variety of Sugar Beets</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist eine Unterart der Sorte Zuckerrüben</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://www.agrarheute.com/pflanze/zuckerrueben/zuckerrueben-staerksten-sorten-2014-454173</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Lisanna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lomerit -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lomerit">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVa"/>
+        <rdfs:label xml:lang="de">Lomerit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>M1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>M2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M3">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>M3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Meredian -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Meredian">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVb"/>
+        <rdfs:isDefinedBy xml:lang="de">https://www.kws.com/de/de/produkte/getreide/gerste/sortenuebersicht/kws-meridian/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Meredian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NAWARO -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NAWARO">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#B2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe_2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIa"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="de">Biomasse und erneuerbare Energietechnologien</rdfs:comment>
+        <rdfs:comment xml:lang="en">biomass and renewable energy technologies</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://www.nawaro.uni-bonn.de/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">NAWARO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#B2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#C2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#D2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#E3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#F2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#G2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#H2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#I2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe_2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IOL"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#K3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#L1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#M3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#O1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#P1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#R"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#S"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIa"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_2"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_3"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasserbecken"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X2"/>
+        <rdfs:comment xml:lang="en">keine Unterart</rdfs:comment>
+        <rdfs:comment xml:lang="en">no subspecies</rdfs:comment>
+        <rdfs:label>NULL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#O1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#O1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>O1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#P1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#P1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>P1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#R -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#R">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>R</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Reform -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Reform">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Species"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id"/>
+        <rdfs:label xml:lang="de">Reform</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#S -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#S">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Sommergerste -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Sommergerste">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc"/>
+        <aeo:hasSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Avalon"/>
+        <rdfs:comment xml:lang="en">is grown for brewery purposes</rdfs:comment>
+        <rdfs:comment xml:lang="de">wird für Brauereizwecke angebaut</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Barley</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="de">https://www.oekolandbau.de/landwirtschaft/pflanze/spezieller-pflanzenbau/getreide/gerste/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Sommergerste</rdfs:label>
+        <rdfs:label xml:lang="en">Summer Barley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>T1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#T2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>T2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIa -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIa">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>VIa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>VIb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Va</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Va_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>Va_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_3">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>Va_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#trfield"/>
+        <rdfs:label>Vb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasser -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasser">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasserbecken"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">Indicates where water is present in the field</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Wasser</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Water</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Wasser</rdfs:label>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasserbecken -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wasserbecken">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label xml:lang="de">Wasserbecken</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wintergerste -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Wintergerste">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVa"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVb"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lomerit"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Meredian"/>
+        <rdfs:comment xml:lang="en">is winter barley grown before winter and has high yield</rdfs:comment>
+        <rdfs:comment xml:lang="de">wird vor dem Winter angebaut und hat einen hohen Ertrag</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://www.frontierag.co.uk/crop-production/seed/winter-barley#:~:text=Winter%20barley%20is%20an%20important,on%20a%20named%20variety%20contract.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="de">https://www.landwirtschaft.de/landwirtschaft-verstehen/haetten-sies-gewusst/pflanzenbau/was-ist-der-unterschied-zwischen-winter-und-sommergetreide#:~:text=Wintergetreide%20wird%20noch%20vor%20dem,Juli%20des%20gleichen%20Jahres%20geerntet.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Winter Barley</rdfs:label>
+        <rdfs:label xml:lang="de">Wintergerste</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Winterraps -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Winterraps">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_2"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <rdfs:comment xml:lang="en">is a plant for producing oil seeds</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist eine Pflanze zur Erzeugung von Ölsaaten</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://ec.europa.eu/eip/agriculture/en/taxonomy/term/1030/all</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="de">https://www.landwirtschaft.sachsen.de/winterraps-19143.html</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Winter Oilseed Rape</rdfs:label>
+        <rdfs:label xml:lang="de">Winterraps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Winterweizen -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Winterweizen">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Benchmark"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Kamerad"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#NULL"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Reform"/>
+        <rdfs:comment xml:lang="de">es geht durch eisiges Wetter, um Ertrag zu produzieren</rdfs:comment>
+        <rdfs:comment xml:lang="en">it goes through freezing weather to produce yield</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">http://www.gut-derenburg.de/html/winterweizen.html</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://extension.sdstate.edu/what-makes-winter-wheat-winter-wheat</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Winter Wheat</rdfs:label>
+        <rdfs:label xml:lang="de">Winterweizen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>X1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#X2">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#field"/>
+        <rdfs:label>X2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Zuckerrüben -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Zuckerrüben">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Plant"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia_1"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib"/>
+        <aeo:hasLocation rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_1"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Alcedo"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#BTS_440"/>
+        <aeo:hasSubSpecies rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Lisanna"/>
+        <rdfs:comment xml:lang="de">Pflanze, die zur Herstellung von Zucker angebaut wird und einen hohen Saccharosegehalt hat</rdfs:comment>
+        <rdfs:comment xml:lang="en">Plant grown for making sugar and has high sucrose</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Zuckerr%C3%BCbe</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Sugar_beet</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sugar-Beet</rdfs:label>
+        <rdfs:label xml:lang="de">Zuckerrüben</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#fertilization -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#fertilization">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_activity"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb_b1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IV_b"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle_teil"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb"/>
+        <rdfs:comment xml:lang="en">is a method that is applied to different locations to strengthen the plants.</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist eine Methode, die auf verschiedene Standorte angewendet wird, um die Pflanzen zu stärken.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/D%C3%BCnger</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Fertilizer</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Dünger</rdfs:label>
+        <rdfs:label xml:lang="en">fertilization</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://www.gardeners.com/how-to/fertilizer-ratios/5161.html#:~:text=Plants%20need%20to%20be%20fertilized,nutrients%20required%20for%20optimum%20growth.&amp;text=It%20took%20nutrients%20from%20the,food%20they%20need%20to%20flourish.</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#plantprotection -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#plantprotection">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_activity"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick2"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Dick_2"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb_b1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IV_b"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle_teil"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va_1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb"/>
+        <rdfs:comment xml:lang="en">is a collection of methods for protecting plants. Here it tells about the location where it is applied to</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Pflanzenschutz</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Crop_protection</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Pflanzenschutz</rdfs:label>
+        <rdfs:label xml:lang="en">plantprotection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#sowing -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#sowing">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#agricultural_activity"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIa"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIb_b1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IId"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IIe"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IV_b"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVc"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#IVd"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ia"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ib"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Ic"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Id"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_1"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Iva_2_Halle_teil"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#VIb"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Va"/>
+        <aeo:appliedTo rdf:resource="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Vb"/>
+        <rdfs:comment xml:lang="en">is the method of planting.and tells about the fields where it is done</rdfs:comment>
+        <rdfs:comment xml:lang="de">ist die Methode der Pflanzung.und erzählt über die Felder, auf denen es gemacht wird</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="de">https://de.wikipedia.org/wiki/Saat</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">https://en.wikipedia.org/wiki/Sowing</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="de">Saat</rdfs:label>
+        <rdfs:label xml:lang="en">sowing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#Treatment">
+        <rdfs:comment xml:lang="en">Tells us about the treatment for the respective Plant</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
